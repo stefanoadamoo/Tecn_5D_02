@@ -4,28 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images7.alphacoders.com/132/1324579.png') center/cover no-repeat fixed; /* Aggiungi uno sfondo generale */
+            background-color: #f8f9fa; /* Colore di fallback */
+            overflow: hidden; /* Nasconde lo sfondo oltre i bordi del body */
+        }
+
+        .navbar {
+            background-color: #343a40;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            margin-right: 20px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .home-container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* Sfondo bianco con opacità */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+            margin: 100px auto; /* Centro rispetto all'asse orizzontale */
+            max-width: 600px; /* Larghezza massima del contenuto */
+            position: relative;
+        }
+
+        .home-container h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .home-container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .home-container a {
+            color: #007bff;
+            text-decoration: underline;
+        }
+
+        .home-container a:hover {
+            color: #0056b3;
+        }
+
+        .motorcycle {
+            position: absolute;
+            bottom: 0;
+            width: 100px; /* Imposta la larghezza desiderata */
+            animation: moveMotorcycle 10s linear infinite alternate;
+        }
+
+        @keyframes moveMotorcycle {
+            0% {
+                left: -100px;
+            }
+            100% {
+                left: calc(100% + 100px);
+            }
+        }
+    </style>
     <title>Piloti</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Piloti</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-              <a class="nav-link" href="/italiani" >Italiani</a>
-              <a class="nav-link" href="/spagnoli">Spagnoli</a>
-              <a class="nav-link" href="/francesi">Francesi</a>
+    <div class="parallax-container">
+        <div class="parallax-bg"></div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/italiani">Italiani</a>
+                        <a class="nav-link" href="/spagnoli">Spagnoli</a>
+                        <a class="nav-link" href="/francesi">Francesi</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
-    <div class="card">
-        <div class="card-body">Esempio di una pagina Home</div>
-      </div>
+    <div class="home-container">
+        <h1>Benvenuto nella MotoGP</h1>
+        <p>Scopri i migliori piloti, le squadre e le emozioni della MotoGP.</p>
+        <p>Esplora la sezione dedicata agli <a href="/italiani">Italiani</a>, agli <a href="/spagnoli">Spagnoli</a>, e ai <a href="/francesi">Francesi</a>.</p>
+
+        <!-- Aggiunta della moto in movimento -->
+        <img src="https://cdn.pixabay.com/photo/2014/04/02/14/07/finish-306245_960_720.png" alt="Motorcycle" class="motorcycle">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
