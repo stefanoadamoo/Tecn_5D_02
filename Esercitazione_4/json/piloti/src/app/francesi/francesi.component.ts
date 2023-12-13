@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./francesi.component.css']
 })
 export class FrancesiComponent {
-    piloti = [
-      { nome: 'Valentino Rossi', altezza: 182, peso: 67, squadra: 'Yamaha', image: 'assets/rossi.jpg' },
-      // Altri piloti italiani...
-    ];
+
 }
