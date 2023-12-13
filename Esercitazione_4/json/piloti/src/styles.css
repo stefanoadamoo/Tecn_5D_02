@@ -1,19 +1,18 @@
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: url('https://images7.alphacoders.com/132/1324579.png') center/cover no-repeat fixed; /* Sostituisci con il percorso reale del tuo sfondo */
-  }
-  
-  .home-container {
-    text-align: center;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin: 100px auto;
-    max-width: 600px;
-    position: relative;
-    color: #ffffff; /* Colore del testo per contrasto */
-  }
-  
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('https://images7.alphacoders.com/132/1324579.png') center/cover no-repeat fixed; /* Sostituisci con il percorso reale del tuo sfondo */
+}
+
+.home-container {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+  max-width: 600px;
+  position: relative;
+  color: #ffffff; /* Colore del testo per contrasto */
+}
