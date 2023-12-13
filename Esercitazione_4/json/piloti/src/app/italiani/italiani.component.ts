@@ -1,24 +1,13 @@
-// italiani.component.ts
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-italiani',
   templateUrl: './italiani.component.html',
-  styleUrls: ['./italiani.component.css'],
+  styleUrls: ['./italiani.component.css']
 })
-export class ItalianiComponent implements OnInit {
+export class ItalianiComponent {
   piloti = [
-    {
-      nome: 'Valentino Rossi',
-      altezza: 182,
-      peso: 67,
-      squadra: 'Yamaha Factory Racing',
-      img: 'https://www.gt-world-challenge-europe.com/timthumb.php?w=700&src=%2Fimages%2Fdrivers%2Fphoto_3126.png',
-    },
-    
+    { nome: 'Valentino Rossi', altezza: 182, peso: 67, squadra: 'Yamaha', image: 'assets/rossi.jpg' },
+    // Altri piloti italiani...
   ];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

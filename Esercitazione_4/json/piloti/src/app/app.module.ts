@@ -1,22 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { IndexComponent } from './index/index.component';
 import { ItalianiComponent } from './italiani/italiani.component';
-import { SpagnoliComponent } from './spagnoli/spagnoli.component';
 import { FrancesiComponent } from './francesi/francesi.component';
+import { SpagnoliComponent } from './spagnoli/spagnoli.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    IndexComponent,
     ItalianiComponent,
-    SpagnoliComponent,
     FrancesiComponent,
+    SpagnoliComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

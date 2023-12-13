@@ -17,15 +17,13 @@
       </div>
   </nav>
 </div>
-<div class="container mt-4">
-  <div class="piloti-container">
-    <div class="pilota" *ngFor="let pilota of piloti">
-        <img [src]="pilota.img" alt="{{ pilota.nome }}">
-        <h5 class="mt-3">{{ pilota.nome }}</h5>
-        <p class="mb-2">Altezza: {{ pilota.altezza }} cm</p>
-        <p class="mb-2">Peso: {{ pilota.peso }} kg</p>
-        <p>Squadra: {{ pilota.squadra }}</p>
-      </div>
+<div class="piloti-container">
+    <div *ngFor="let pilota of piloti" class="pilota">
+      <img [src]="pilota.image" alt="{{ pilota.nome }}">
+      <h5 class="mt-3">{{ pilota.nome }}</h5>
+      <p class="mb-2">Altezza: {{ pilota.altezza }} cm</p>
+      <p class="mb-2">Peso: {{ pilota.peso }} kg</p>
+      <p>Squadra: {{ pilota.squadra }}</p>
     </div>
   </div>
   
