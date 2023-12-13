@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Piloti": {
+    "piloti": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Piloti:build:production"
+              "browserTarget": "piloti:build:production"
             },
             "development": {
-              "browserTarget": "Piloti:build:development"
+              "browserTarget": "piloti:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Piloti:build"
+            "browserTarget": "piloti:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f2d1c44e-a0c0-4991-a052-dba41b1ede52"
   }
 }
