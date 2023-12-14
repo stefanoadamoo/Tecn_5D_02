@@ -1,21 +1,20 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-
-  <div class="home-container">
-      <h1>Benvenuto nella MotoGP</h1>
-      <p>Scopri i migliori piloti, le squadre e le emozioni della MotoGP.</p>
-      <p>Esplora la sezione dedicata agli <a href="/italiani">Italiani</a>, agli <a href="/spagnoli">Spagnoli</a>, e ai <a href="/francesi">Francesi</a>.</p>
-
-      <!-- Aggiunta della moto in movimento -->
-      <img src="https://cdn.pixabay.com/photo/2014/04/02/14/07/finish-306245_960_720.png" alt="Motorcycle" class="motorcycle">
-      <router-outlet></router-outlet>
-    </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
- 
+<div class="parallax-container">
+    <div class="parallax-bg"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Piloti MotoGP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" routerLink="/" routerLinkActive="active-menu">Home</a>
+                    <a class="nav-link" routerLink="/italiani" [state]="italiani"  routerLinkActive="active-menu">Italiani</a>
+                    <a class="nav-link" routerLink="/spagnoli" [state]="spagnoli"  routerLinkActive="active-menu">Spagnoli</a>
+                    <a class="nav-link" routerLink="/francesi" [state]="francesi"  routerLinkActive="active-menu">Francesi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<router-outlet></router-outlet>
