@@ -6,7 +6,7 @@ import { SpagnoliComponent } from './spagnoli/spagnoli.component';
 import { FrancesiComponent } from './francesi/francesi.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: 'italiani', component: ItalianiComponent },
   { path: 'spagnoli', component: SpagnoliComponent },
   { path: 'francesi', component: FrancesiComponent },
