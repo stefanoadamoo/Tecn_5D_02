@@ -18,7 +18,7 @@ export class AppComponent implements OnInit{
   constructor(private http: HttpClient) {}
   ngOnInit(): void {
   // Make the HTTP request:
-  this.http.get('https://3000-stefanoadamoo-tecn5d02-s7luv29r0am.ws-eu106.gitpod.io/api').subscribe(data => {
+  this.http.get('https://3000-stefanoadamoo-tecn5d02-s7luv29r0am.ws-eu107.gitpod.io/api').subscribe(data => {
   // Read the result field from the JSON response.
   this.italiani = data["Italiani"];
   this.spagnoli = data["Spagnoli"];
