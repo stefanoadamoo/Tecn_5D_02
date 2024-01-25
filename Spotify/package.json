@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "@angular/cli": "^16.2.11"
+    "@angular/cli": "^16.2.11",
+    "bootstrap": "^5.3.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.12"
   }
 }
