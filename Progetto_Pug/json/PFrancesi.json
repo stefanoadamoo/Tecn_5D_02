@@ -1,0 +1,16 @@
+{
+    "francesi":[
+    {
+       "nome":"Johann Zarco",
+       "altezza":171,
+       "peso":68,
+       "squadra":"LCR Honda"
+    },
+    {
+       "nome":"Fabio Quartararo",
+       "altezza":177,
+       "peso":64,
+       "squadra":"Monster Energy Yamaha MotoGP™"
+    }
+ ]
+}

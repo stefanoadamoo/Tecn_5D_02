@@ -1,0 +1,46 @@
+{
+    "spagnoli":[
+    {
+       "nome":"Maverick Viñales",
+       "altezza":175,
+       "peso":70,
+       "squadra":"Squadra XYZ"
+    },
+    {
+       "nome":"Nome Pilota",
+       "altezza":171,
+       "peso":64,
+       "squadra":"Aprilia Racing"
+    },
+    {
+       "nome":"Nome Pilota",
+       "altezza":175,
+       "peso":70,
+       "squadra":"Squadra XYZ"
+    },
+    {
+       "nome":"Nome Pilota",
+       "altezza":175,
+       "peso":70,
+       "squadra":"Squadra XYZ"
+    },
+    {
+       "nome":"Nome Pilota",
+       "altezza":175,
+       "peso":70,
+       "squadra":"Squadra XYZ"
+    },
+    {
+       "nome":"Nome Pilota",
+       "altezza":175,
+       "peso":70,
+       "squadra":"Squadra XYZ"
+    },
+    {
+       "nome":"Nome Pilota",
+       "altezza":175,
+       "peso":70,
+       "squadra":"Squadra XYZ"
+    }
+ ]
+}

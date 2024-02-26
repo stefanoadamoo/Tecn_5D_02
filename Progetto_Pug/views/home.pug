@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/style.css')
+    title Piloti MotoGP
+  body
+    header.header
+      h1 Benvenuto alla pagina principale
+    article.container
+      div.person
+          div.person-image(style=`background: url('${ita[0].pathImmagine}') top center no-repeat; background-size: cover;`)
+          a(href='/italiani') Piloti Italiani 
+    
+      div.person
+          div.person-image(style=`background: url('${fra[0].pathImmagine}') top center no-repeat; background-size: cover;`)
+          a(href='/francesi') Piloti Francesi
+
+      div.person
+          div.person-image(style=`background: url('${spa[0].pathImmagine}') top center no-repeat; background-size: cover;`)
+          a(href='/spagnoli') Piloti Spagnoli
